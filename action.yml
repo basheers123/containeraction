@@ -1,0 +1,14 @@
+name: 'my first container action'
+description 'A cloud basheer'
+author:'Basheer'
+inputs:
+  myInputs:
+    description: 'greeting to use'
+    required: true
+    default: 'awesome basheer'
+output:
+  myOutput:
+    description: 'total memeory'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
